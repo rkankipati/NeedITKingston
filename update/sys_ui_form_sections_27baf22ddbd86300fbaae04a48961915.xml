@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="27baf22ddbd86300fbaae04a48961915" sys_domain="global" table="x_176022_needit_needit" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-09-02 10:18:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a3baf22ddbd86300fbaae04a48961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_176022_needit_needit" name="x_176022_needit_needit" sys_domain="global" view="63baf22ddbd86300fbaae04a48961910">27baf22ddbd86300fbaae04a48961915</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_176022_needit_needit" sys_domain="global" view="63baf22ddbd86300fbaae04a48961910">67baf22ddbd86300fbaae04a48961913</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-02 10:18:37</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_176022_needit_needit</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-09-02 10:18:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>27baf22ddbd86300fbaae04a48961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_176022_needit_needit</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NeedIT" source="x_176022_needit">0f5b42addb586300fbaae04a48961991</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NeedIT">0f5b42addb586300fbaae04a48961991</sys_scope>
+            <sys_update_name>sys_ui_form_sections_27baf22ddbd86300fbaae04a48961915</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-02 10:18:37</sys_updated_on>
+            <sys_user/>
+            <view display_value="User" name="User">63baf22ddbd86300fbaae04a48961910</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
