@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>CountOverdueNeedItTasksAssignedTo</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+/* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+/* Optional GlideRecord */ event) {
+	
+	// Add your code here
+	// Construct a GlideRecord query to find all NeedIt Task records with Due date
+	// field values in the past for the same Assigned to.  The records cannot be in the
+	// Closed state.
+	var rightNow = new GlideDateTime();
+	
+	var overdueNITasks = new GlideRecord('x_176022_needit_needit_task');
+	overdueNITasks.addQuery('due_date','<=',rightNow);
+	overdueNITasks.addQuery('state','<',3);
+	overdueNITasks.addQuery('assigned_to',current.assigned_to);
+	
+	overdueNITasks.query();
+	
+	// Print to the Message field on a notification
+	// Print to the Message field on a notification
+	var count = overdueNITasks.getRowCount();
+	if(count > 1){
+		template.print("In addition to this overdue NeedIt Task, you have " + (count - 1) + " more overdue NeedIt Tasks.");
+	}
+	//template.print("In addition to this overdue NeedIt Task, you have " + (overdueNITasks.getRowCount() - 1) + " more overdue NeedIt Tasks.");
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-07 11:55:31</sys_created_on>
+        <sys_id>fb100517db542300fbaae04a48961947</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CountOverdueNeedItTasksAssignedTo</sys_name>
+        <sys_package display_value="NeedIT" source="x_176022_needit">0f5b42addb586300fbaae04a48961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIT">0f5b42addb586300fbaae04a48961991</sys_scope>
+        <sys_update_name>sys_script_email_fb100517db542300fbaae04a48961947</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-07 12:04:25</sys_updated_on>
+    </sys_script_email>
+</record_update>
