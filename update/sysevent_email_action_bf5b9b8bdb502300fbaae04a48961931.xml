@@ -40,7 +40,7 @@
 <p>Number: ${number}</p>
 <p>Please complete this task as soon as possible..</p>
 <p>Click here to view the NeedIt Task record: ${URI_REF}.</p>
-<pre xml:space="preserve">${mail_script:CountOverdueNeedItTasksAssignedTo}</pre>]]></message_html>
+<pre xml:space="preserve">${mail_script:CountOverdueNeedItTasksAssignedTo}<br /><br />${mailto:mailto.closeneedittask}<br /><br /></pre>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Overdue NeedIt Task</name>
@@ -49,7 +49,7 @@
         <push_message_only>false</push_message_only>
         <recipient_fields/>
         <recipient_groups/>
-        <recipient_users>kprasad18@gmail.com,6816f79cc0a8016401c5a33be04be441,ramprasad.kankipati@cognizant.com</recipient_users>
+        <recipient_users>6816f79cc0a8016401c5a33be04be441</recipient_users>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
@@ -62,7 +62,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf5b9b8bdb502300fbaae04a48961931</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Overdue NeedIt Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIT" source="x_176022_needit">0f5b42addb586300fbaae04a48961991</sys_package>
@@ -70,7 +70,7 @@
         <sys_scope display_value="NeedIT">0f5b42addb586300fbaae04a48961991</sys_scope>
         <sys_update_name>sysevent_email_action_bf5b9b8bdb502300fbaae04a48961931</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-09-07 14:13:13</sys_updated_on>
+        <sys_updated_on>2018-09-08 12:53:56</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
